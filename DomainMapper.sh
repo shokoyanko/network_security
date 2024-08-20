@@ -329,6 +329,8 @@ TEMP_KERB_USERS=$(mktemp -t kerb_users_XXXX.lst)
             echo "[#] $package_name is already installed."
         fi
     done
+    
+git clone https://github.com/SecureAuthCorp/impacket.git /home/kali/Desktop/impacket > /dev/null 2>&1
 
 mkdir -p "$DIRPATH/kerb" > /dev/null 2>&1
 
